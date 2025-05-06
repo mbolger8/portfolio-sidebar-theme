@@ -5,17 +5,18 @@
 import { LitElement, html, css } from "lit";
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
+import '@haxtheweb/scroll-button/scroll-button.js';
 
 /**
- * `portfolio-very-theme`
+ * `portfolio-sidebar-theme`
  * 
  * @demo index.html
- * @element portfolio-very-theme
+ * @element portfolio-sidebar-theme
  */
-export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
+export class PortfolioSidebarTheme extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "portfolio-very-theme";
+    return "portfolio-sidebar-theme";
   }
 
   constructor() {
@@ -221,7 +222,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
       }
       iframe {
         border: none;
-        max-width: 90%;
+        width: 90%;
         height: 600px;
       }
       p {
@@ -302,7 +303,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
       <p>Chester Springs, PA  | (484) 883-4912</p>
       <p>Email: mjbolger462@gmail.com / mmb7354@psu.edu</p>
       <h4>Experience</h4>
-      <p>Al PAstor Server</p>
+      <p>Al Pastor Server</p>
       <p>Revival Pizza Pub Server</p>
       <p>Moonshine Chocolate Sales Representative</p>
       <h4>Education</h4>
@@ -331,7 +332,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
         <p>Hi! I'm Matthew Bolger, a cybersecurity student at Pennsylvania State University.</p>
         <p>I have a passion for technology and a keen interest in cybersecurity.</p>
         <p>I enjoy learning about new technologies and how they can be used to improve security.</p>
-        <p>In my free time, I like to play video games, go to the gym, and spend time with my friends and family.</p>
+        <p>In my free time, I like to play video games, go to the gym, and spend time with my girlfriend, friends, and family.</p>
       </div>
     </section>
     </div>
@@ -357,4 +358,4 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(PortfolioVeryTheme.tag, PortfolioVeryTheme);
+globalThis.customElements.define(PortfolioSidebarTheme.tag, PortfolioSidebarTheme);
